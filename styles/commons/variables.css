@@ -3,7 +3,7 @@
   --medium: #828282;
   --light: #fff;
   --base-time: 0.2s;
-  --base-font: 'Roboto';
-  --secondary-font: 'Monserrat';
+  --accent-font: 'Montserrat', sans-serif;
+  --base-font: 'Roboto', sans-serif;
   --base-size: 18px;
 }
