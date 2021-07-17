@@ -3,6 +3,6 @@
 @import url('./fonts.css');
 
 .container {
-  width: 100%;
+  width: 960px;
   margin: 0 auto;
 }
