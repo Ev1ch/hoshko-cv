@@ -1,0 +1,19 @@
+.language-toggle {
+  transform: rotate(-90deg);
+}
+
+.language-toggle__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--medium);
+  font: 500 16px var(--base-font);
+}
+
+.language-toggle__link:not(:last-of-type) {
+  border-right: 1px solid var(--medium);
+  margin-right: 5px;
+}
+
+.language-toggle__link--active {
+  color: var(--dark);
+}

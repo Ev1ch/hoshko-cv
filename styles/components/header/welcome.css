@@ -1,0 +1,20 @@
+@import url('./language-toggle.css');
+
+.welcome {
+  margin: 40px 0;
+  flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome__title {
+  margin: 0;
+  width: 110px;
+  font: 48px var(--accent-font);
+}
+
+.welcome__description {
+  width: 220px;
+  font: var(--base-size) var(--accent-font);
+}
