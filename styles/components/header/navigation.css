@@ -16,7 +16,7 @@
 .navigation__link {
   text-decoration: none;
   color: var(--medium);
-  font: 900 var(--base-size) var(--base-font);
+  font-weight: 900;
 }
 
 .navigation__item--active .navigation__link {
