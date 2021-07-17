@@ -1,0 +1,9 @@
+:root {
+  --dark: #000;
+  --medium: #828282;
+  --light: #fff;
+  --base-time: 0.2s;
+  --base-font: 'Roboto';
+  --secondary-font: 'Monserrat';
+  --base-size: 18px;
+}

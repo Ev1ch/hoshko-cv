@@ -1,0 +1,8 @@
+@import url('./normalise.css');
+@import url('./variables.css');
+@import url('./fonts.css');
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
