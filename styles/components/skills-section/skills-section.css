@@ -1,0 +1,8 @@
+@import url('./skills-list.css');
+@import url('./skills-image.css');
+
+.skills-section__description {
+  align-items: center;
+  display: flex;
+  gap: 80px;
+}

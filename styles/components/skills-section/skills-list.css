@@ -1,0 +1,26 @@
+.skills-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  display: block;
+  width: 75%;
+}
+
+.skills-list__item {
+  position: relative;
+  font-size: 24px;
+}
+
+.skills-list__item::before {
+  position: absolute;
+  left: -30px;
+  top: 3px;
+  font: 900 20px 'Font Awesome 5 Free';
+  color: black;
+  content: '\f00c';
+}
+
+.skills-list__item:not(:last-of-type) {
+  margin-bottom: 20px;
+}
