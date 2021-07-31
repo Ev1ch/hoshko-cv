@@ -1,27 +1,33 @@
 .tool-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+
+.tool-item:hover .tool-item__star--active {
+  transform: scale(1.05);
 }
 
 .tool-item__title {
-    margin: auto 0;
-    width: 126px;
-    color: var(--medium);
-    font-weight: 900;
-    font-size: 14px;
+  margin: auto 0;
+  width: 126px;
+  color: var(--medium);
+  font-weight: 900;
+  font-size: 14px;
 }
 
 .tool-item__image {
-    width: 88px;
-    height: 88px;
+  width: 88px;
+  height: 88px;
 }
 
 .tool-item__star {
-    color: #e5e5e5;
+  transition: calc(var(--base-time) / 2);
+  display: inline-block;
+  color: #e5e5e5;
 }
 
 .tool-item__star--active {
-    color: var(--dark);
+  color: var(--dark);
 }
