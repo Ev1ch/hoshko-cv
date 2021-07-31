@@ -1,0 +1,7 @@
+@import url('./video-mockup.css');
+
+.video-mockups {
+    background: #fff;
+    padding: 65px 82px;
+    width: 100%;
+}
