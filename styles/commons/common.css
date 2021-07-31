@@ -19,5 +19,6 @@
 }
 
 .section__title {
+  margin-top: 0;
   font: 900 34px var(--base-font);
 }
