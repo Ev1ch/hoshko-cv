@@ -1,0 +1,23 @@
+@import url('./ad-mockup.css');
+
+.ad-mockups {
+    width: 100%;
+    background: #fff;
+    padding: 28px 82px;
+}
+
+.ad-mockups:not(:last-of-type) {
+    margin-bottom: 96px;
+}
+
+.ad-mockups__row {
+    display: flex;
+    justify-content: space-between;
+    height: 445px;
+}
+
+.ad-mockups__title {
+    text-decoration: underline;
+    display: inline-block;
+    margin: 130px auto;
+}
