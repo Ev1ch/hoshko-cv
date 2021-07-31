@@ -1,0 +1,8 @@
+.contacts-button {
+  margin: 25px 0 46px 0;
+  padding: 10px 28px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  background: var(--dark);
+}
