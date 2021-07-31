@@ -1,4 +1,24 @@
-.contacts-link__icon {
+.contacts-link__link {
   color: var(--dark);
+}
+
+.contacts-link__icon {
+  transition: var(--base-time);
   font-size: 40px;
+}
+
+.contacts-link--tiktok:hover .contacts-link__link {
+  color: #fe2c55;
+}
+
+.contacts-link--instagram:hover .contacts-link__link {
+  color: #833ab4;
+}
+
+.contacts-link--telegram:hover .contacts-link__link {
+  color: #0088cc;
+}
+
+.contacts-link--facebook:hover .contacts-link__link {
+  color: #1877f2;
 }
