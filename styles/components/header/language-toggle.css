@@ -3,10 +3,26 @@
 }
 
 .language-toggle__link {
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   color: var(--medium);
   font: 500 16px var(--base-font);
+}
+
+.language-toggle__link::before {
+  transition: var(--base-time);
+  content: '';
+  left: 0;
+  width: 0%;
+  bottom: -5px;
+  height: 1px;
+  position: absolute;
+  background: var(--medium);
+}
+
+.language-toggle__link:hover::before {
+  width: 100%;
 }
 
 .language-toggle__link:not(:last-of-type) {
@@ -16,4 +32,8 @@
 
 .language-toggle__link--active {
   color: var(--dark);
+}
+
+.language-toggle__link--active:hover::before {
+  background: var(--dark);
 }
