@@ -1,0 +1,10 @@
+@import url('./contacts-link.css');
+
+.contacts-links {
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+  gap: 46px;
+}
