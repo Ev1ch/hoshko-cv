@@ -1,0 +1,27 @@
+.tool-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.tool-item__title {
+    margin: auto 0;
+    width: 126px;
+    color: var(--medium);
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.tool-item__image {
+    width: 88px;
+    height: 88px;
+}
+
+.tool-item__star {
+    color: #e5e5e5;
+}
+
+.tool-item__star--active {
+    color: var(--dark);
+}
