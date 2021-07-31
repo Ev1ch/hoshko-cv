@@ -19,6 +19,29 @@
   font-weight: 900;
 }
 
+.navigation__item {
+  position: relative;
+}
+
+.navigation__item::before {
+  transition: var(--base-time);
+  content: '';
+  left: 0;
+  width: 0%;
+  bottom: -5px;
+  height: 1px;
+  position: absolute;
+  background: var(--medium);
+}
+
+.navigation__item:hover::before {
+  width: 100%;
+}
+
 .navigation__item--active .navigation__link {
   color: var(--dark);
+}
+
+.navigation__item--active:hover::before {
+  background: var(--dark);
 }
