@@ -1,0 +1,19 @@
+.video-mockup {
+    width: 915px;
+    margin: 0 auto;
+}
+
+.video-mockup:not(:last-of-type) {
+    margin-bottom: 96px;
+}
+
+.video-mockup__video {
+    width: 100%;
+    background: #000;
+    height: 528px;
+    margin-bottom: 38px;
+}
+
+.video-mockup__title {
+    text-decoration: underline;
+}
