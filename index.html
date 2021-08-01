@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hoshko</title>
     <link rel="stylesheet" href="styles/index.css">
-    <script src="scripts/index.mjs" type="module"></script>
   </head>
 
   <body>
@@ -18,37 +17,39 @@
       </div>
     </div>
 
-    <header class="header">
+    <header class="header" id="welcome">
       <div class="container">
-        <nav class="header__navigation navigation">
+        <nav class="navigation">
+          <div class="navigation__progress">
+          </div>
           <ul class="navigation__list">
-            <li class="navigation__item navigation__item--active">
-              <a href="#" class="navigation__link">
+            <li class="navigation__item navigation__item--active" data-target="#welcome">
+              <a class="navigation__link">
                 Головне
               </a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">
+            <li class="navigation__item" data-target="#about">
+              <a class="navigation__link">
                 Про мене
               </a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">
+            <li class="navigation__item" data-target="#skills">
+              <a class="navigation__link">
                 Навички
               </a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">
+            <li class="navigation__item" data-target="#tools">
+              <a class="navigation__link">
                 Інструменти
               </a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">
+            <li class="navigation__item" data-target="#portfolio">
+              <a class="navigation__link">
                 Портфоліо
               </a>
             </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">
+            <li class="navigation__item" data-target="#contacts">
+              <a class="navigation__link">
                 Контакти
               </a>
             </li>
@@ -78,7 +79,7 @@
       </div>
     </header>
 
-    <section class="section about-section">
+    <section class="section about-section" id="about">
       <div class="container">
         <h2 class="section__title">
           Про мене
@@ -101,7 +102,7 @@
       </div>
     </section>
 
-    <section class="section skills-section">
+    <section class="section skills-section" id="skills">
       <div class="container">
         <h2 class="section__title">
           Навички
@@ -138,7 +139,7 @@
       </div>
     </section>
 
-    <section class="section tools-section">
+    <section class="section tools-section" id="tools">
       <div class="container">
         <h2 class="section__title">
           Інструменти
@@ -274,7 +275,7 @@
       </div>
     </section>
 
-    <section class="section portfolio-section">
+    <section class="section portfolio-section" id="portfolio">
       <h2 class="section__title">
         Портфоліо
       </h2>
@@ -440,7 +441,7 @@
       </div>
     </section>
 
-    <section class="section contacts-section">
+    <section class="section contacts-section" id="contacts">
       <div class="container contacts-section__container">
         <h2 class="section__title">
           Контакти
@@ -483,6 +484,8 @@
         </ul>
       </div>
     </section>
+
+    <script src="scripts/index.mjs" type="module"></script>
   </body>
 
 </html>

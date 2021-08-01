@@ -18,37 +18,39 @@
             </div>
         </div>
 
-        <header class="header">
+        <header class="header" id="welcome">
             <div class="container">
-                <nav class="header__navigation navigation">
+                <nav class="navigation">
+                    <div class="navigation__progress">
+                    </div>
                     <ul class="navigation__list">
-                        <li class="navigation__item navigation__item--active">
-                            <a href="#" class="navigation__link">
+                        <li class="navigation__item navigation__item--active" data-target="#welcome">
+                            <a class="navigation__link">
                                 Основное
                             </a>
                         </li>
-                        <li class="navigation__item">
-                            <a href="#" class="navigation__link">
+                        <li class="navigation__item" data-target="#about">
+                            <a class="navigation__link">
                                 Обо мне
                             </a>
                         </li>
-                        <li class="navigation__item">
-                            <a href="#" class="navigation__link">
+                        <li class="navigation__item" data-target="#skills">
+                            <a class="navigation__link">
                                 Навыки
                             </a>
                         </li>
-                        <li class="navigation__item">
-                            <a href="#" class="navigation__link">
+                        <li class="navigation__item" data-target="#tools">
+                            <a class="navigation__link">
                                 Инструменты
                             </a>
                         </li>
-                        <li class="navigation__item">
-                            <a href="#" class="navigation__link">
+                        <li class="navigation__item" data-target="#portfolio">
+                            <a class="navigation__link">
                                 Портфолио
                             </a>
                         </li>
-                        <li class="navigation__item">
-                            <a href="#" class="navigation__link">
+                        <li class="navigation__item" data-target="#contacts">
+                            <a class="navigation__link">
                                 Контакты
                             </a>
                         </li>
@@ -78,7 +80,7 @@
             </div>
         </header>
 
-        <section class="section about-section">
+        <section class="section about-section" id="about">
             <div class="container">
                 <h2 class="section__title">
                     Обо мне
@@ -102,7 +104,7 @@
             </div>
         </section>
 
-        <section class="section skills-section">
+        <section class="section skills-section" id="skills">
             <div class="container">
                 <h2 class="section__title">
                     Навыки
@@ -140,7 +142,7 @@
             </div>
         </section>
 
-        <section class="section tools-section">
+        <section class="section tools-section" id="tools">
             <div class="container">
                 <h2 class="section__title">
                     Инструменты
@@ -276,7 +278,7 @@
             </div>
         </section>
 
-        <section class="section portfolio-section">
+        <section class="section portfolio-section" id="portfolio">
             <h2 class="section__title">
                 Портфолио
             </h2>
@@ -449,7 +451,7 @@
             </div>
         </section>
 
-        <section class="section contacts-section">
+        <section class="section contacts-section" id="contacts">
             <div class="container contacts-section__container">
                 <h2 class="section__title">
                     Контакты
