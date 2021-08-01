@@ -18,6 +18,7 @@
 }
 
 .tool-item__image {
+  object-fit: cover;
   width: 88px;
   height: 88px;
 }
