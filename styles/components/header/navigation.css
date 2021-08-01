@@ -1,7 +1,39 @@
 .navigation {
+  background: #fff;
   padding: 32px 0;
   text-align: center;
   border-bottom: 1px solid var(--medium);
+}
+
+.navigation__progress {
+  position: absolute;
+  top: 0;
+  display: none;
+  height: 5px;
+  background: var(--medium);
+  width: 0;
+}
+
+.navigation--scrolling {
+  z-index: 2;
+  left: 0;
+  right: 0;
+  position: fixed;
+  top: 0;
+  animation: jump var(--base-time) 1 linear;
+}
+
+.navigation--scrolling .navigation__progress {
+  display: block;
+}
+
+@keyframes jump {
+  0% {
+    top: -88px;
+  }
+  100% {
+    top: 0;
+  }
 }
 
 .navigation__list {
@@ -14,6 +46,7 @@
 }
 
 .navigation__link {
+  cursor: pointer;
   text-decoration: none;
   color: var(--medium);
   font-weight: 900;
