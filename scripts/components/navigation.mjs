@@ -114,7 +114,7 @@ class Navigation {
     for (const link of this.links.pairs) {
       if (link.target.element.isSameNode(target)) {
         window.scrollTo({
-          top: link.section.startY - this.navigation.element.clientHeight,
+          top: link.section.startY - this.navigation.element.clientHeight + 5,
           behavior: 'smooth',
         });
       }
