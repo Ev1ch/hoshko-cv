@@ -1,15 +1,15 @@
-.tool-item {
+.tool {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 48px;
 }
 
-.tool-item:hover .tool-item__star--active {
+.tool:hover .tool__star--active {
   transform: scale(1.05);
 }
 
-.tool-item__title {
+.tool__title {
   margin: auto 0;
   width: 126px;
   color: var(--medium);
@@ -17,18 +17,18 @@
   font-size: 14px;
 }
 
-.tool-item__image {
+.tool__image {
   object-fit: cover;
   width: 88px;
   height: 88px;
 }
 
-.tool-item__star {
+.tool__star {
   transition: calc(var(--base-time) / 2);
   display: inline-block;
   color: #e5e5e5;
 }
 
-.tool-item__star--active {
+.tool__star--active {
   color: var(--dark);
 }

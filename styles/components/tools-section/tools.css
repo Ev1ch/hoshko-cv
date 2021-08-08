@@ -1,0 +1,8 @@
+@import url('./tool.css');
+
+.tools {
+  display: flex;
+  gap: 68px;
+  flex-wrap: wrap;
+  justify-content: center;
+}

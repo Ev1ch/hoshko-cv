@@ -37,8 +37,9 @@
 }
 
 .navigation__list {
-  gap: 80px;
-  display: inline-flex;
+  justify-content: center;
+  gap: 48px;
+  display: flex;
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
@@ -77,4 +78,26 @@
 
 .navigation__item--active:hover::before {
   background: var(--dark);
+}
+
+.navigation__input {
+  display: none;
+}
+
+.navigation__input:checked ~ .navigation__list {
+  display: flex;
+}
+
+.navigation__input:checked ~ .navigation__burger {
+  margin-bottom: 20px;
+}
+
+.navigation__burger {
+  flex: 1;
+  display: none;
+}
+
+.navigation__toggle {
+  cursor: pointer;
+  font-weight: 700;
 }
