@@ -11,11 +11,12 @@
   min-height: 400px;
   background: #000;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: left;
-     object-position: left;
+  object-position: left;
   width: 100%;
   margin-bottom: 38px;
+  max-height: 600px;
   border-radius: 10px;
 }
 

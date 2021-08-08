@@ -8,13 +8,13 @@
 
 .project:hover {
   -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .project:hover .project__board {
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
 
 .project:not(:last-of-type):not(.project--minimized) {
@@ -27,15 +27,15 @@
 
 .project--minimized .project__board {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
 }
 
 .project--minimized .project__visual {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .project--minimized .project__image {
@@ -49,8 +49,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   background: #fff;
   margin-bottom: 38px;
 }
@@ -59,7 +59,7 @@
   background: #fff;
   border-radius: 10px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   max-height: 100%;
   width: 45%;
 }
@@ -68,8 +68,9 @@
   max-width: 100%;
   background: #fff;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 100%;
+  max-height: 600px;
   border-radius: 10px;
 }
 
@@ -83,20 +84,20 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 30px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .project__visual--centered {
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .project__description {
