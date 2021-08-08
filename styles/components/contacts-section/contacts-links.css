@@ -3,7 +3,11 @@
 .contacts-links {
   margin: 0;
   padding: 0;
-  justify-content: center;
+  -webkit-box-pack: center;
+     -ms-flex-pack: center;
+   justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
   gap: 46px;

@@ -1,12 +1,21 @@
 .tool {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 48px;
 }
 
 .tool:hover .tool__star--active {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .tool__title {
@@ -18,12 +27,15 @@
 }
 
 .tool__image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 88px;
   height: 88px;
 }
 
 .tool__star {
+  -webkit-transition: calc(var(--base-time) / 2);
+  -o-transition: calc(var(--base-time) / 2);
   transition: calc(var(--base-time) / 2);
   display: inline-block;
   color: #e5e5e5;

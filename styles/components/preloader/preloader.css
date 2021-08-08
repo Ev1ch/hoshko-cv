@@ -2,6 +2,8 @@
   background: #fff;
   position: fixed;
   z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   visibility: hidden;
   inset: 0;
@@ -32,17 +34,36 @@
   font: 700 200px var(--accent-font);
   color: #d1d1d1;
   content: '#';
-  animation: pulse calc(var(--base-time) * 10) infinite;
+  -webkit-animation: pulse calc(var(--base-time) * 10) infinite;
+          animation: pulse calc(var(--base-time) * 10) infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 @keyframes pulse {
   0% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   50% {
-    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }

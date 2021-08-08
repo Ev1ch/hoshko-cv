@@ -2,7 +2,11 @@
 @import url('./skills-image.css');
 
 .skills-section__description {
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 80px;
 }

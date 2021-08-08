@@ -1,5 +1,7 @@
 .contacts-button {
   cursor: pointer;
+  -webkit-transition: var(--base-time);
+  -o-transition: var(--base-time);
   transition: var(--base-time);
   margin: 25px 0 46px 0;
   padding: 10px 28px;
@@ -14,6 +16,9 @@
 }
 
 .contacts-button:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-  transform: scale(1.05);
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }

@@ -10,8 +10,10 @@
 .video-mockup__video {
   min-height: 400px;
   background: #000;
-  object-fit: cover;
-  object-position: left;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
   width: 100%;
   margin-bottom: 38px;
   border-radius: 10px;

@@ -3,6 +3,8 @@
 }
 
 .contacts-link__icon {
+  -webkit-transition: var(--base-time);
+  -o-transition: var(--base-time);
   transition: var(--base-time);
   font-size: 40px;
 }

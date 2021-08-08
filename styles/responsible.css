@@ -12,22 +12,32 @@
   }
   .navigation__list {
     gap: 24px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     display: none;
   }
   .navigation__item--active::before,
   .navigation__item:hover::before {
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     width: 200px;
   }
 
   .language-toggle {
-    transform: rotate(0);
+    -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+            transform: rotate(0);
   }
 
   .skills-section__description {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 
   .project,
@@ -49,8 +59,11 @@
     margin-left: 0px;
   }
   .project--minimized:hover {
-    transform: scale(1);
-    box-shadow: none;
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 
   .ad-mockups__row {
@@ -60,11 +73,16 @@
 
 @media screen and (max-width: 720px) {
   .welcome {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .project__board {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: auto;
     gap: 30px;
   }
@@ -73,7 +91,10 @@
     width: auto;
   }
   .project__visual{
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .project__image {
     max-height: 500px;
@@ -105,7 +126,8 @@
   }
 
   .working-image img {
-    object-position: center;
+    -o-object-position: center;
+       object-position: center;
   }
 
   .about-section__description {
