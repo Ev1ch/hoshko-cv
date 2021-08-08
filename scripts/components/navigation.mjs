@@ -20,6 +20,7 @@ class Navigation {
     this.links = this.linksMatch(navigationOptions.links);
     this.options = {
       ...navigationOptions.options,
+      visibilityOffset: navigationOptions.options.visibilityOffset || 0,
     };
 
     this.initClickHandlers();
@@ -35,8 +36,6 @@ class Navigation {
         return {
           section: {
             element: sectionElement,
-            startY: sectionElement.offsetTop,
-            endY: sectionElement.offsetTop + sectionElement.clientHeight,
           },
           target: {
             element: document.querySelector(
@@ -55,13 +54,19 @@ class Navigation {
     const linkActiveSelector = this.links.activeSelector;
 
     for (const link of this.links.pairs) {
+      const sectionElement = link.section.element;
+      const targetElement = link.target.element;
+
       if (
-        scrollY + navigationElementHeight >= link.section.startY &&
-        scrollY < link.section.endY - navigationElementHeight
+        scrollY + navigationElementHeight >= sectionElement.offsetTop &&
+        scrollY <
+          sectionElement.offsetTop +
+            sectionElement.clientHeight -
+            navigationElementHeight
       ) {
-        link.target.element.classList.add(linkActiveSelector);
+        targetElement.classList.add(linkActiveSelector);
       } else {
-        link.target.element.classList.remove(linkActiveSelector);
+        targetElement.classList.remove(linkActiveSelector);
       }
     }
   }
@@ -113,10 +118,26 @@ class Navigation {
 
     for (const link of this.links.pairs) {
       if (link.target.element.isSameNode(target)) {
+        const sectionElement = link.section.element;
+        const navigationElement = this.navigation.element;
+        let scrollY = Math.max(
+          sectionElement.offsetTop - navigationElement.clientHeight + 5,
+          0,
+        );
+
+        this.rootHeightHandler(scrollY);
+
+        scrollY = Math.max(
+          sectionElement.offsetTop - navigationElement.clientHeight + 5,
+          0,
+        );
+
         window.scrollTo({
-          top: link.section.startY - this.navigation.element.clientHeight + 5,
+          top: scrollY,
           behavior: 'smooth',
         });
+
+        break;
       }
     }
   }
@@ -127,10 +148,9 @@ class Navigation {
 
   initClickHandlers() {
     for (const link of this.links.pairs) {
-      link.target.element.addEventListener(
-        'click',
-        this.clickHanlder.bind(this),
-      );
+      const targetElement = link.target.element;
+
+      targetElement.addEventListener('click', this.clickHanlder.bind(this));
     }
   }
 }
