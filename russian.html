@@ -1,496 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hoshko</title>
-        <link rel="stylesheet" href="styles/index.css">
-        <script src="scripts/index.mjs" type="module"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoshko</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.mjs" type="module"></script>
+  </head>
 
-    <body>
-        <div class="preloader preloader--active">
-            <div class="preloader__container">
-                <span class="preloader__title">#Hoshko</span>
-                <span class="preloader__background">#</span>
+  <body>
+    <div class="preloader preloader--active">
+      <div class="preloader__container">
+        <span class="preloader__title">#Hoshko</span>
+        <span class="preloader__background">#</span>
+      </div>
+    </div>
+
+    <header class="header" id="welcome">
+      <div class="container">
+        <nav class="navigation">
+          <div class="navigation__progress">
+          </div>
+          <ul class="navigation__list">
+            <li class="navigation__item navigation__item--active" data-target="welcome">
+              <a class="navigation__link">
+                Основное
+              </a>
+            </li>
+            <li class="navigation__item" data-target="about">
+              <a class="navigation__link">
+                Обо мне
+              </a>
+            </li>
+            <li class="navigation__item" data-target="skills">
+              <a class="navigation__link">
+                Навыки
+              </a>
+            </li>
+            <li class="navigation__item" data-target="tools">
+              <a class="navigation__link">
+                Инструменты
+              </a>
+            </li>
+            <li class="navigation__item" data-target="portfolio">
+              <a class="navigation__link">
+                Портфолио
+              </a>
+            </li>
+            <li class="navigation__item" data-target="contacts">
+              <a class="navigation__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="welcome">
+          <h1 class="welcome__title">
+            Гошко Анастасия
+          </h1>
+          <p class="welcome__description">
+            SMM-щик, таргетолог, дизайнер,
+            18 лет, Киев
+          </p>
+          <div class="language-toggle">
+            <a class="language-toggle__link" href="index.html">
+              Укр
+            </a>
+            <a class="language-toggle__link language-toggle__link--active" href="#">
+              Рус
+            </a>
+          </div>
+        </div>
+        <div class="working-image">
+          <img src="assets/images/personal-avatar.jpg" alt="Привет!">
+        </div>
+      </div>
+    </header>
+
+    <section class="section about-section" id="about">
+      <div class="container">
+        <h2 class="section__title">
+          Обо мне
+        </h2>
+
+        <div class="about-section__description">
+          <p>
+            Привет, я, Анастасия – SMM-щик из Киева.
+            Я заинтересована в рекламе в социальных
+            сетях и во всем, что с этим связано.
+          </p>
+          <p>
+            Закончила курсы “SMM 2021” от IRA+KIRA.PR,
+            принимала участие в “Case-champ Lumon”.
+          </p>
+          <p>
+            Готова к реализации отличных
+            проектов с чудесными людьми.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <h2 class="section__title">
+          Навыки
+        </h2>
+
+        <div class="skills-section__description">
+          <ul class="skills-list">
+            <li class="skills-list__item">
+              Разработка маркетинговой стратегии
+              для дальнейшего воплощения.
+            </li>
+            <li class="skills-list__item">
+              Составление CJM (карта пути клиента) для
+              лучшего понимания составляющих воронки продаж.
+            </li>
+            <li class="skills-list__item">
+              Результат, что удовлетворяет KPI
+              (ключевые показатели эффективности).
+            </li>
+            <li class="skills-list__item">
+              Создание веток для успешной таргетированной рекламы.
+            </li>
+            <li class="skills-list__item">
+              Разработка, монтаж, коллаж объектов для рекламных макетов.
+            </li>
+            <li class="skills-list__item">
+              Оформление и ведение профиля согласно пожеланиям клиента
+              с сочетанием того, что сейчас необходимо и важно.
+            </li>
+          </ul>
+          <div class="skills-image">
+            <img src="assets/images/icons/skills-icon.png" alt="Мои навыки">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tools-section" id="tools">
+      <div class="container">
+        <h2 class="section__title">
+          Инструменты
+        </h2>
+
+        <div class="tools-section__description">
+          <p>
+            Я работаю в таких програмах как:
+          </p>
+          <div class="tools-list">
+            <div class="tool-item">
+              <img src="assets/images/icons/figma-icon.png" alt="Figma" class="tool-item__image">
+              <span class="tool-item__title">
+                Figma
+              </span>
+              <div class="tool-item__level">
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star">
+                  <i class="fas fa-star"></i>
+                </span>
+              </div>
             </div>
+            <div class="tool-item">
+              <img src="assets/images/icons/photoshop-icon.png" alt="Photoshop" class="tool-item__image">
+              <span class="tool-item__title">
+                Adobe Photoshop
+              </span>
+              <div class="tool-item__level">
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star">
+                  <i class="fas fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <div class="tool-item">
+              <img src="assets/images/icons/ads-manager-icon.png" alt="Ads Manager Facebook" class="tool-item__image">
+              <span class="tool-item__title">
+                Ads Manager Facebook
+              </span>
+              <div class="tool-item__level">
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star">
+                  <i class="fas fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <div class="tool-item">
+              <img src="assets/images/icons/facebook-business-manager-icon.png" alt="Facebook Business Manager"
+                class="tool-item__image">
+              <span class="tool-item__title">
+                Facebook Business Manager
+              </span>
+              <div class="tool-item__level">
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star">
+                  <i class="fas fa-star"></i>
+                </span>
+              </div>
+            </div>
+            <div class="tool-item">
+              <img src="assets/images/icons/phone-editors-icon.png" alt="Другие для телефона" class="tool-item__image">
+              <span class="tool-item__title">
+                Другие для телефона
+              </span>
+              <div class="tool-item__level">
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+                <span class="tool-item__star tool-item__star--active">
+                  <i class="fas fa-star"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio-section" id="portfolio">
+      <h2 class="section__title">
+        Портфолио
+      </h2>
+
+      <div class="projects">
+        <div class="project">
+          <div class="project__board">
+            <div class="project__visual">
+              <img class="project__image" 
+                src="assets/images/projects/visuals/kids-school.png"
+                alt="Детская музыкальная школа" />
+              <img class="project__image"
+                src="assets/images/projects/visuals/kids-school-feed.png" 
+                alt="Детская музыкальная школа" />
+            </div>
+            <div class="project__description">
+              <div class="project__brief">
+                <p>
+                  <strong>Задача:</strong>
+                  оформить профиль в Instagram.
+                </p>
+                <p>
+                  <strong>Результат:</strong>
+                  сделаны шапка,
+                  аватарка, хайлайты,
+                  референсы постов.
+                </p>
+              </div>
+            </div>
+          </div>
+          <span class="project__title">
+            Детская музыкальная школа
+          </span>
         </div>
 
-        <header class="header" id="welcome">
-            <div class="container">
-                <nav class="navigation">
-                    <div class="navigation__progress">
-                    </div>
-                    <ul class="navigation__list">
-                        <li class="navigation__item navigation__item--active" data-target="welcome">
-                            <a class="navigation__link">
-                                Основное
-                            </a>
-                        </li>
-                        <li class="navigation__item" data-target="about">
-                            <a class="navigation__link">
-                                Обо мне
-                            </a>
-                        </li>
-                        <li class="navigation__item" data-target="skills">
-                            <a class="navigation__link">
-                                Навыки
-                            </a>
-                        </li>
-                        <li class="navigation__item" data-target="tools">
-                            <a class="navigation__link">
-                                Инструменты
-                            </a>
-                        </li>
-                        <li class="navigation__item" data-target="portfolio">
-                            <a class="navigation__link">
-                                Портфолио
-                            </a>
-                        </li>
-                        <li class="navigation__item" data-target="contacts">
-                            <a class="navigation__link">
-                                Контакты
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="welcome">
-                    <h1 class="welcome__title">
-                        Гошко Анастасия
-                    </h1>
-                    <p class="welcome__description">
-                        SMM-щик, таргетолог, дизайнер,
-                        18 лет, Киев
-                    </p>
-                    <div class="language-toggle">
-                        <a class="language-toggle__link" href="index.html">
-                            Укр
-                        </a>
-                        <a class="language-toggle__link language-toggle__link--active" href="#">
-                            Рус
-                        </a>
-                    </div>
-                </div>
-                <div class="working-image">
-                    <img src="assets/images/personal-avatar.jpg" alt="Привет!">
-                </div>
+        <div class="project">
+          <div class="project__board">
+            <div class="project__visual">
+              <img class="project__image" src="assets/images/projects/visuals/shop.png"
+                alt="Магазин домашних товаров" />
+              <img class="project__image" src="assets/images/projects/visuals/shop-feed.png"
+                alt="Магазин домашних товаров" />
             </div>
-        </header>
-
-        <section class="section about-section" id="about">
-            <div class="container">
-                <h2 class="section__title">
-                    Обо мне
-                </h2>
-
-                <div class="about-section__description">
-                    <p>
-                        Привет, я, Анастасия – SMM-щик из Киева.
-                        Я заинтересована в рекламе в социальных
-                        сетях и во всем, что с этим связано.
-                    </p>
-                    <p>
-                        Закончила курсы “SMM 2021” от IRA+KIRA.PR,
-                        принимала участие в “Case-champ Lumon”.
-                    </p>
-                    <p>
-                        Готова к реализации отличных
-                        проектов с чудесными людьми.
-                    </p>
-                </div>
+            <div class="project__description">
+              <div class="project__brief">
+                <p>
+                  <strong>Задача:</strong>
+                  оформить профиль в Instagram.
+                </p>
+                <p>
+                  <strong>Результат:</strong>
+                  сделаны шапка,
+                  аватарка, хайлайты,
+                  референсы постов.
+                </p>
+              </div>
             </div>
-        </section>
+          </div>
+          <span class="project__title">
+            Магазин домашних товаров
+          </span>
+        </div>
 
-        <section class="section skills-section" id="skills">
-            <div class="container">
-                <h2 class="section__title">
-                    Навыки
-                </h2>
-
-                <div class="skills-section__description">
-                    <ul class="skills-list">
-                        <li class="skills-list__item">
-                            Разработка маркетинговой стратегии
-                            для дальнейшего воплощения.
-                        </li>
-                        <li class="skills-list__item">
-                            Составление CJM (карта пути клиента) для
-                            лучшего понимания составляющих воронки продаж.
-                        </li>
-                        <li class="skills-list__item">
-                            Результат, что удовлетворяет KPI
-                            (ключевые показатели эффективности).
-                        </li>
-                        <li class="skills-list__item">
-                            Создание веток для успешной таргетированной рекламы.
-                        </li>
-                        <li class="skills-list__item">
-                            Разработка, монтаж, коллаж объектов для рекламных макетов.
-                        </li>
-                        <li class="skills-list__item">
-                            Оформление и ведение профиля согласно пожеланиям клиента
-                            с сочетанием того, что сейчас необходимо и важно.
-                        </li>
-                    </ul>
-                    <div class="skills-image">
-                        <img src="assets/images/icons/skills-icon.png" alt="Мои навыки">
-                    </div>
-                </div>
+        <div class="projects__row">
+          <div class="project project--minimized">
+            <div class="project__board">
+              <div class="project__visual">
+                <img class="project__image" src="assets/images/projects/visuals/nails-service.jpeg"
+                  alt="Мастер ногтевого сервиса" />
+              </div>
             </div>
-        </section>
-
-        <section class="section tools-section" id="tools">
-            <div class="container">
-                <h2 class="section__title">
-                    Инструменты
-                </h2>
-
-                <div class="tools-section__description">
-                    <p>
-                        Я работаю в таких програмах как:
-                    </p>
-                    <div class="tools-list">
-                        <div class="tool-item">
-                            <img src="assets/images/icons/figma-icon.png" alt="Figma" class="tool-item__image">
-                            <span class="tool-item__title">
-                                Figma
-                            </span>
-                            <div class="tool-item__level">
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="tool-item">
-                            <img src="assets/images/icons/photoshop-icon.png" alt="Photoshop" class="tool-item__image">
-                            <span class="tool-item__title">
-                                Adobe Photoshop
-                            </span>
-                            <div class="tool-item__level">
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="tool-item">
-                            <img src="assets/images/icons/ads-manager-icon.png" alt="Ads Manager Facebook"
-                                class="tool-item__image">
-                            <span class="tool-item__title">
-                                Ads Manager Facebook
-                            </span>
-                            <div class="tool-item__level">
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="tool-item">
-                            <img src="assets/images/icons/facebook-business-manager-icon.png"
-                                alt="Facebook Business Manager" class="tool-item__image">
-                            <span class="tool-item__title">
-                                Facebook Business Manager
-                            </span>
-                            <div class="tool-item__level">
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="tool-item">
-                            <img src="assets/images/icons/phone-editors-icon.png" alt="Другие для телефона"
-                                class="tool-item__image">
-                            <span class="tool-item__title">
-                                Другие для телефона
-                            </span>
-                            <div class="tool-item__level">
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                <span class="tool-item__star tool-item__star--active">
-                                    <i class="fas fa-star"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <span class="project__title">
+              Мастер ногтевого сервиса
+            </span>
+          </div>
+          <div class="project project--minimized">
+            <div class="project__board">
+              <div class="project__visual">
+                <img class="project__image" src="assets/images/projects/visuals/jewellery-service.png"
+                  alt="Магазин ювелирных изделий" />
+              </div>
             </div>
-        </section>
-
-        <section class="section portfolio-section" id="portfolio">
-            <h2 class="section__title">
-                Портфолио
-            </h2>
-
-            <div class="projects">
-                <div class="project">
-                    <div class="project__board">
-                        <div class="project__visual">
-                            <img class="project__image"
-                                src="https://i.pinimg.com/originals/15/d4/90/15d4903ffd54f3ad76007ffae8722fc5.png"
-                                alt="" />
-                        </div>
-                        <div class="project__description">
-                            <div class="project__brief">
-                                <p>
-                                    <strong>Задача:</strong>
-                                    оформить профиль в Instagram.
-                                </p>
-                                <p>
-                                    <strong>Результат:</strong>
-                                    сделаны шапка,
-                                    аватарка, хайлайты,
-                                    референсы постов.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="project__title">
-                        Детская музыкальная школа
-                    </span>
-                </div>
-
-                <div class="project">
-                    <div class="project__board">
-                        <div class="project__visual">
-                            <img class="project__image"
-                                src="https://i.pinimg.com/originals/15/d4/90/15d4903ffd54f3ad76007ffae8722fc5.png"
-                                alt="" />
-                        </div>
-                        <div class="project__description">
-                            <div class="project__brief">
-                                <p>
-                                    <strong>Задача:</strong>
-                                    оформить профиль в Instagram.
-                                </p>
-                                <p>
-                                    <strong>Результат:</strong>
-                                    сделаны шапка,
-                                    аватарка, хайлайты,
-                                    референсы постов.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="project__title">
-                        Магазин домашних товаров
-                    </span>
-                </div>
-
-                <div class="projects__row">
-                    <div class="project project--minimized">
-                        <div class="project__board">
-                            <div class="project__visual">
-                                <img class="project__image" src="assets/images/projects/visuals/nails-service.jpeg"
-                                    alt="Мастер ногтевого сервиса" />
-                            </div>
-                        </div>
-                        <span class="project__title">
-                            Мастер ногтевого сервиса
-                        </span>
-                    </div>
-                    <div class="project project--minimized">
-                        <div class="project__board">
-                            <div class="project__visual">
-                                <img class="project__image" src="assets/images/projects/visuals/jewellery-service.png"
-                                    alt="Магазин ювелирных изделий" />
-                            </div>
-                        </div>
-                        <span class="project__title">
-                            Магазин ювелирных изделий
-                        </span>
-                    </div>
-                </div>
-                <div class="ad-mockups">
-                    <div class="ad-mockups__row">
-                        <div class="ad-mockup">
-                            <img src="assets/images/projects/ads/ad-1.jpg" alt="Блог психологини"
-                                class="ad-mockup__image">
-                        </div>
-                        <div class="ad-mockup">
-                            <img src="assets/images/projects/ads/ad-2.png" alt="Розпродажа спортмагазина"
-                                class="ad-mockup__image">
-                        </div>
-                        <div class="ad-mockup">
-                            <img src="assets/images/projects/ads/ad-3.jpg" alt="Мастер педикюра"
-                                class="ad-mockup__image">
-                        </div>
-                        <div class="ad-mockup">
-                            <img src="assets/images/projects/ads/ad-4.jpg" alt="Мастер-кондитер"
-                                class="ad-mockup__image">
-                        </div>
-                    </div>
-                    <span class="ad-mockups__title">
-                        Примеры рекламных макетов
-                    </span>
-                    <div class="ad-mockups__row">
-                        <div class="ad-mockup">
-                            <img src="assets/images/projects/ads/ad-5.jpg" alt="Пархомовский музей"
-                                class="ad-mockup__image">
-                        </div>
-                        <div class="ad-mockup">
-                            <img src="assets/images/projects/ads/ad-6.jpg" alt="Пархомовский музей"
-                                class="ad-mockup__image">
-                        </div>
-                        <div class="ad-mockup">
-                            <img src="assets/images/projects/ads/ad-7.jpg" alt="Пархомовский музей"
-                                class="ad-mockup__image">
-                        </div>
-                        <div class="ad-mockup">
-                            <img src="assets/images/projects/ads/ad-8.jpg" alt="Мастер-кондитер"
-                                class="ad-mockup__image">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project">
-                    <div class="project__board">
-                        <div class="project__visual">
-                            <img class="project__image"
-                                src="https://i.pinimg.com/originals/15/d4/90/15d4903ffd54f3ad76007ffae8722fc5.png"
-                                alt="" />
-                        </div>
-                        <div class="project__description">
-                            <div class="project__brief">
-                                <p>
-                                    <strong>Задача:</strong>
-                                    скомпонировать фрагменти
-                                    видео в 1 для рекламы в Instagram.
-                                </p>
-                                <p>
-                                    <strong>Результат:</strong>
-                                    створені шапка,
-                                    аватарка, хайлайти,
-                                    референси постів.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <span class="project__title">
-                        Пример монтажа видео
-                        для рекламного креатива
-                    </span>
-                </div>
-
-                <div class="video-mockups">
-                    <div class="video-mockup">
-                        <video class="video-mockup__video" controls muted>
-                            <source src="assets/videos/working-proccess.mp4" type="video/mp4">
-                        </video>
-                        <span class="video-mockup__title">
-                            Пример создания разных веток
-                            (Изменение вариантов аудиторий, интересов, макетов)
-                            таргетированной рекламы для тестов
-                            и нахождения наилучшего варианта
-                        </span>
-                    </div>
-                </div>
+            <span class="project__title">
+              Магазин ювелирных изделий
+            </span>
+          </div>
+        </div>
+        <div class="ad-mockups">
+          <div class="ad-mockups__row">
+            <div class="ad-mockup">
+              <img src="assets/images/projects/ads/ad-1.jpg" alt="Блог психологини" class="ad-mockup__image">
             </div>
-        </section>
-
-        <section class="section contacts-section" id="contacts">
-            <div class="container contacts-section__container">
-                <h2 class="section__title">
-                    Контакты
-                </h2>
-
-                <div class="contacts-section__description">
-                    <p>
-                        Хотите узнать больше
-                        или просто поболтать?
-                    </p>
-                    <p>
-                        Пожалуйста!
-                    </p>
-                </div>
-
-                <button class="contacts-button">
-                    <i class="far fa-envelope contacts-button__icon"></i> Send message
-                </button>
-
-                <ul class="contacts-links">
-                    <li class="contacts-link contacts-link--tiktok">
-                        <a href="#" class="contacts-link__link">
-                            <i class="fab fa-tiktok contacts-link__icon"></i>
-                        </a>
-                    </li>
-                    <li class="contacts-link contacts-link--instagram">
-                        <a href="#" class="contacts-link__link">
-                            <i class="fab fa-instagram contacts-link__icon"></i>
-                        </a>
-                    </li>
-                    <li class="contacts-link contacts-link--telegram">
-                        <a href="#" class="contacts-link__link">
-                            <i class="fab fa-telegram-plane contacts-link__icon"></i>
-                        </a>
-                    </li>
-                    <li class="contacts-link contacts-link--facebook">
-                        <a href="#" class="contacts-link__link">
-                            <i class="fab fa-facebook-f contacts-link__icon"></i>
-                        </a>
-                    </li>
-                </ul>
+            <div class="ad-mockup">
+              <img src="assets/images/projects/ads/ad-2.png" alt="Розпродажа спортмагазина" class="ad-mockup__image">
             </div>
-        </section>
-    </body>
+            <div class="ad-mockup">
+              <img src="assets/images/projects/ads/ad-3.jpg" alt="Мастер педикюра" class="ad-mockup__image">
+            </div>
+            <div class="ad-mockup">
+              <img src="assets/images/projects/ads/ad-4.jpg" alt="Мастер-кондитер" class="ad-mockup__image">
+            </div>
+          </div>
+          <span class="ad-mockups__title">
+            Примеры рекламных макетов
+          </span>
+          <div class="ad-mockups__row">
+            <div class="ad-mockup">
+              <img src="assets/images/projects/ads/ad-5.jpg" alt="Пархомовский музей" class="ad-mockup__image">
+            </div>
+            <div class="ad-mockup">
+              <img src="assets/images/projects/ads/ad-6.jpg" alt="Пархомовский музей" class="ad-mockup__image">
+            </div>
+            <div class="ad-mockup">
+              <img src="assets/images/projects/ads/ad-7.jpg" alt="Пархомовский музей" class="ad-mockup__image">
+            </div>
+            <div class="ad-mockup">
+              <img src="assets/images/projects/ads/ad-8.jpg" alt="Мастер-кондитер" class="ad-mockup__image">
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project__board">
+            <div class="project__visual project__visual--centered">
+              <video class="project__video" controls muted>
+                <source src="assets/videos/clothes-shop.mp4#t=1" type="video/mp4">
+              </video>
+            </div>
+            <div class="project__description">
+              <div class="project__brief">
+                <p>
+                  <strong>Задача:</strong>
+                  скомпонировать фрагменти
+                  видео в 1 для рекламы в Instagram.
+                </p>
+                <p>
+                  <strong>Результат:</strong>
+                  сделаны шапка,
+                  аватарка, хайлайты,
+                  референсы постов.
+                </p>
+              </div>
+            </div>
+          </div>
+          <span class="project__title">
+            Пример монтажа видео
+            для рекламного креатива
+          </span>
+        </div>
+
+        <div class="video-mockups">
+          <div class="video-mockup">
+            <video class="video-mockup__video" controls muted>
+              <source src="assets/videos/working-proccess.mp4" type="video/mp4">
+            </video>
+            <span class="video-mockup__title">
+              Пример создания разных веток
+              (Изменение вариантов аудиторий, интересов, макетов)
+              таргетированной рекламы для тестов
+              и нахождения наилучшего варианта
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contacts-section" id="contacts">
+      <div class="container contacts-section__container">
+        <h2 class="section__title">
+          Контакты
+        </h2>
+
+        <div class="contacts-section__description">
+          <p>
+            Хотите узнать больше
+            или просто поболтать?
+          </p>
+          <p>
+            Пожалуйста!
+          </p>
+        </div>
+
+        <button class="contacts-button">
+          <i class="far fa-envelope contacts-button__icon"></i> Send message
+        </button>
+
+        <ul class="contacts-links">
+          <li class="contacts-link contacts-link--tiktok">
+            <a href="#" class="contacts-link__link">
+              <i class="fab fa-tiktok contacts-link__icon"></i>
+            </a>
+          </li>
+          <li class="contacts-link contacts-link--instagram">
+            <a href="#" class="contacts-link__link">
+              <i class="fab fa-instagram contacts-link__icon"></i>
+            </a>
+          </li>
+          <li class="contacts-link contacts-link--telegram">
+            <a href="#" class="contacts-link__link">
+              <i class="fab fa-telegram-plane contacts-link__icon"></i>
+            </a>
+          </li>
+          <li class="contacts-link contacts-link--facebook">
+            <a href="#" class="contacts-link__link">
+              <i class="fab fa-facebook-f contacts-link__icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
 
 </html>
