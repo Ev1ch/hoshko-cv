@@ -5,12 +5,13 @@
   flex-wrap: wrap;
   align-items: center;
   display: flex;
+  gap: 48px;
   justify-content: space-between;
 }
 
 .welcome__title {
   margin: 0;
-  width: 110px;
+  width: 250px;
   font: 48px var(--accent-font);
 }
 

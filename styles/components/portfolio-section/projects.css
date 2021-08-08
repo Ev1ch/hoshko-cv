@@ -1,9 +1,10 @@
 .projects__row {
-    margin: 0 auto;
-    display: flex;
-    width: 915px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 915px;
 }
 
 .projects__row:not(:last-of-type) {
-    margin-bottom: 96px;
+  margin-bottom: 96px;
 }

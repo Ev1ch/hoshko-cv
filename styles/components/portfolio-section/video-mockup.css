@@ -8,6 +8,10 @@
 }
 
 .video-mockup__video {
+  min-height: 400px;
+  background: #000;
+  object-fit: cover;
+  object-position: left;
   width: 100%;
   margin-bottom: 38px;
 }
