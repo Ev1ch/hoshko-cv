@@ -10,6 +10,7 @@
 .video-mockup__video {
   width: 100%;
   margin-bottom: 38px;
+  border-radius: 10px;
 }
 
 .video-mockup__title {

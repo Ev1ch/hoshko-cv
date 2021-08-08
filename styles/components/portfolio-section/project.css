@@ -29,6 +29,10 @@
   flex: 1;
 }
 
+.project--minimized .project__image {
+  width: 100%;
+}
+
 .project__board {
   height: 528px;
   padding: 48px 26px;
@@ -39,9 +43,17 @@
 }
 
 .project__image {
+  background: #fff;
+  border-radius: 10px;
   object-fit: cover;
-  width: 100%;
+  width: 48%;
+}
+
+.project__video {
+  background: #fff;
+  object-fit: cover;
   height: 100%;
+  border-radius: 10px;
 }
 
 .project__visual,
@@ -53,6 +65,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.project__visual--centered {
+  justify-content: center;
 }
 
 .project__description {
