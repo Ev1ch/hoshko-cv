@@ -2,10 +2,6 @@
   .working-image img {
     object-position: center;
   }
-  .ad-mockups,
-  .video-mockups {
-    padding: 10px;
-  }
   .about-section__description {
     width: 100%;
   }
@@ -25,6 +21,20 @@
   .project__description {
     width: auto;
   }
+  .project__visual{
+    flex-direction: column;
+  }
+  .project__image {
+    max-height: 500px;
+  }
+
+  .ad-mockups {
+    padding: 48px 26px;
+  }
+  .ad-mockup {
+    max-width: 100%;
+  }
+
 }
 
 @media screen and (max-width: 1200px) {
