@@ -8,6 +8,10 @@
   font: var(--base-size) var(--base-font);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: 960px;
   margin: 0 auto;
