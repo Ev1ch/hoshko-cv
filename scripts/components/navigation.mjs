@@ -120,17 +120,20 @@ class Navigation {
       if (link.target.element.isSameNode(target)) {
         const sectionElement = link.section.element;
         const navigationElement = this.navigation.element;
+        const currentScrollY = document.documentElement.scrollTop;
         let scrollY = Math.max(
           sectionElement.offsetTop - navigationElement.clientHeight + 5,
           0,
         );
 
-        this.rootHeightHandler(scrollY);
+        if(currentScrollY > this.options.visibilityOffset) {
+          this.rootHeightHandler(scrollY);
 
-        scrollY = Math.max(
-          sectionElement.offsetTop - navigationElement.clientHeight + 5,
-          0,
-        );
+          scrollY = Math.max(
+            sectionElement.offsetTop - navigationElement.clientHeight + 5,
+            0,
+          );
+        }
 
         window.scrollTo({
           top: scrollY,
