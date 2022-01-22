@@ -4,6 +4,7 @@
   transition: var(--base-time);
   width: 915px;
   margin: 0 auto;
+  flex-shrink: 0;
 }
 
 .project:hover {

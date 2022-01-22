@@ -1,0 +1,9 @@
+@import url('./project.css');
+
+.posts {
+  width: 100%;
+  background-color: var(--contrast-light);
+  padding: 28px 82px;
+  height: 100px;
+  margin-bottom: 96px;
+}

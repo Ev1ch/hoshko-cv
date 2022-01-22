@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hoshko</title>
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </head>
 
   <body>
@@ -20,107 +24,93 @@
     <header class="header" id="welcome">
       <div class="container">
         <nav class="navigation">
-          <div class="navigation__progress">
-          </div>
-          <input type="checkbox" id="navigationCheckbox" class="navigation__input">
+          <div class="navigation__progress"></div>
+          <input
+            type="checkbox"
+            id="navigationCheckbox"
+            class="navigation__input"
+          />
           <div class="navigation__burger">
-            <label class="navigation__toggle" for="navigationCheckbox"><i class="fas fa-bars"></i> Меню</label>
+            <label class="navigation__toggle" for="navigationCheckbox"
+              ><i class="fas fa-bars"></i> Меню</label
+            >
           </div>
           <ul class="navigation__list">
-            <li class="navigation__item navigation__item--active" data-target="welcome">
-              <a class="navigation__link">
-                Головне
-              </a>
+            <li
+              class="navigation__item navigation__item--active"
+              data-target="welcome"
+            >
+              <a class="navigation__link"> Головне </a>
             </li>
             <li class="navigation__item" data-target="about">
-              <a class="navigation__link">
-                Про мене
-              </a>
+              <a class="navigation__link"> Про мене </a>
             </li>
             <li class="navigation__item" data-target="skills">
-              <a class="navigation__link">
-                Навички
-              </a>
+              <a class="navigation__link"> Навички </a>
             </li>
             <li class="navigation__item" data-target="tools">
-              <a class="navigation__link">
-                Інструменти
-              </a>
+              <a class="navigation__link"> Інструменти </a>
             </li>
             <li class="navigation__item" data-target="portfolio">
-              <a class="navigation__link">
-                Портфоліо
-              </a>
+              <a class="navigation__link"> Портфоліо </a>
             </li>
             <li class="navigation__item" data-target="contacts">
-              <a class="navigation__link">
-                Контакти
-              </a>
+              <a class="navigation__link"> Контакти </a>
             </li>
           </ul>
         </nav>
 
         <div class="welcome">
-          <h1 class="welcome__title">
-            Гошко Анастасія
-          </h1>
+          <h1 class="welcome__title">Гошко Анастасія</h1>
           <p class="welcome__description">
-            SMM-щик, таргетолог, дизайнер,
-            18 років, Київ
+            SMM-щик, таргетолог, дизайнер, 18 років, Київ
           </p>
           <div class="language-toggle">
-            <a class="language-toggle__link language-toggle__link--active" href="#">
+            <a
+              class="language-toggle__link language-toggle__link--active"
+              href="#"
+            >
               Укр
             </a>
-            <a class="language-toggle__link" href="russian.html">
-              Рус
-            </a>
+            <a class="language-toggle__link" href="russian.html"> Рус </a>
           </div>
         </div>
         <div class="working-image">
-          <img src="assets/images/personal-avatar.jpg" alt="Welcome!">
+          <img src="assets/images/personal-avatar.jpg" alt="Welcome!" />
         </div>
       </div>
     </header>
 
     <section class="section about-section" id="about">
       <div class="container">
-        <h2 class="section__title">
-          Про мене
-        </h2>
+        <h2 class="section__title">Про мене</h2>
 
         <div class="about-section__description">
           <p>
-            Привіт, я, Анастасія – SMM-щик з Києва.
-            Я зацікавлена в рекламі в соціальних
-            мережах і у всьому, що з цим звязано.
-          </p>
-          <p> Закінчила курси “SMM 2021” від IRA+KIRA.PR,
-            брала участь в “Case-champ Lumon”.
+            Привіт, я, Анастасія – SMM-щик з Києва. Я зацікавлена в рекламі в
+            соціальних мережах і у всьому, що з цим звязано.
           </p>
           <p>
-            Готова до реалізації цікавих
-            проектів з чудовими людьми.
+            Закінчила курси “SMM 2021” від IRA+KIRA.PR, брала участь в
+            “Case-champ Lumon”.
           </p>
+          <p>Готова до реалізації цікавих проектів з чудовими людьми.</p>
         </div>
       </div>
     </section>
 
     <section class="section skills-section" id="skills">
       <div class="container">
-        <h2 class="section__title">
-          Навички
-        </h2>
+        <h2 class="section__title">Навички</h2>
 
         <div class="skills-section__description">
           <ul class="skills-list">
             <li class="skills-list__item">
-              Розробка маркетингової стратегії
-              для подальшого втілення.
+              Розробка маркетингової стратегії для подальшого втілення.
             </li>
             <li class="skills-list__item">
-              Складання CJM (карта шляху клієнта) для
-              кращого розуміння складових воронки продажів.
+              Складання CJM (карта шляху клієнта) для кращого розуміння
+              складових воронки продажів.
             </li>
             <li class="skills-list__item">
               Результат, що задовільняє KPI (ключеві показники ефективності).
@@ -132,12 +122,12 @@
               Розробка, монтаж, колаж об‘єктів для рекламних макетів.
             </li>
             <li class="skills-list__item">
-              Оформлення та ведення профілю згідно з побажаннями
-              клієнта з поєднанням того, що зараз необхідно і важливо.
+              Оформлення та ведення профілю згідно з побажаннями клієнта з
+              поєднанням того, що зараз необхідно і важливо.
             </li>
           </ul>
           <div class="skills-image">
-            <img src="assets/images/icons/skills-icon.png" alt="My skills">
+            <img src="assets/images/icons/skills-icon.png" alt="My skills" />
           </div>
         </div>
       </div>
@@ -145,20 +135,18 @@
 
     <section class="section tools-section" id="tools">
       <div class="container">
-        <h2 class="section__title">
-          Інструменти
-        </h2>
+        <h2 class="section__title">Інструменти</h2>
 
         <div class="tools-section__description">
-          <p>
-            Я працюю в таких програмах як:
-          </p>
+          <p>Я працюю в таких програмах як:</p>
           <div class="tools">
             <div class="tool">
-              <img src="assets/images/icons/figma-icon.png" alt="Figma" class="tool__image">
-              <span class="tool__title">
-                Figma
-              </span>
+              <img
+                src="assets/images/icons/figma-icon.png"
+                alt="Figma"
+                class="tool__image"
+              />
+              <span class="tool__title"> Figma </span>
               <div class="tool__level">
                 <span class="tool__star tool__star--active">
                   <i class="fas fa-star"></i>
@@ -178,10 +166,12 @@
               </div>
             </div>
             <div class="tool">
-              <img src="assets/images/icons/photoshop-icon.png" alt="Photoshop" class="tool__image">
-              <span class="tool__title">
-                Adobe Photoshop
-              </span>
+              <img
+                src="assets/images/icons/photoshop-icon.png"
+                alt="Photoshop"
+                class="tool__image"
+              />
+              <span class="tool__title"> Adobe Photoshop </span>
               <div class="tool__level">
                 <span class="tool__star tool__star--active">
                   <i class="fas fa-star"></i>
@@ -201,10 +191,12 @@
               </div>
             </div>
             <div class="tool">
-              <img src="assets/images/icons/ads-manager-icon.png" alt="Ads Manager Facebook" class="tool__image">
-              <span class="tool__title">
-                Ads Manager Facebook
-              </span>
+              <img
+                src="assets/images/icons/ads-manager-icon.png"
+                alt="Ads Manager Facebook"
+                class="tool__image"
+              />
+              <span class="tool__title"> Ads Manager Facebook </span>
               <div class="tool__level">
                 <span class="tool__star tool__star--active">
                   <i class="fas fa-star"></i>
@@ -224,11 +216,12 @@
               </div>
             </div>
             <div class="tool">
-              <img src="assets/images/icons/facebook-business-manager-icon.png" alt="Facebook Business Manager"
-                class="tool__image">
-              <span class="tool__title">
-                Facebook Business Manager
-              </span>
+              <img
+                src="assets/images/icons/facebook-business-manager-icon.png"
+                alt="Facebook Business Manager"
+                class="tool__image"
+              />
+              <span class="tool__title"> Facebook Business Manager </span>
               <div class="tool__level">
                 <span class="tool__star tool__star--active">
                   <i class="fas fa-star"></i>
@@ -248,10 +241,12 @@
               </div>
             </div>
             <div class="tool">
-              <img src="assets/images/icons/phone-editors-icon.png" alt="Інші для телефону" class="tool__image">
-              <span class="tool__title">
-                Інші для телефону
-              </span>
+              <img
+                src="assets/images/icons/phone-editors-icon.png"
+                alt="Інші для телефону"
+                class="tool__image"
+              />
+              <span class="tool__title"> Інші для телефону </span>
               <div class="tool__level">
                 <span class="tool__star tool__star--active">
                   <i class="fas fa-star"></i>
@@ -276,121 +271,209 @@
     </section>
 
     <section class="section portfolio-section" id="portfolio">
-      <h2 class="section__title">
-        Портфоліо
-      </h2>
+      <h2 class="section__title">Портфоліо</h2>
 
       <div class="projects">
-        <div class="project">
-          <div class="project__board">
-            <div class="project__visual">
-              <img class="project__image" src="assets/images/projects/visuals/kids-school.png"
-                alt="Дитяча музична школа" />
-              <img class="project__image" src="assets/images/projects/visuals/kids-school-feed.png"
-                alt="Дитяча музична школа" />
-            </div>
-            <div class="project__description">
-              <div class="project__brief">
-                <p>
-                  <strong>Завдання:</strong>
-                  оформити профіль в Instagram.
-                </p>
-                <p>
-                  <strong>Результат:</strong>
-                  створені шапка,
-                  аватарка, хайлайти,
-                  референси постів.
-                </p>
+        <div class="projects-slider swiper">
+          <div class="projects-slider__wrapper swiper-wrapper">
+            <div class="project">
+              <div class="project__board">
+                <div class="project__visual">
+                  <img
+                    class="project__image"
+                    src="assets/images/projects/visuals/kids-school.png"
+                    alt="Дитяча музична школа"
+                  />
+                  <img
+                    class="project__image"
+                    src="assets/images/projects/visuals/kids-school-feed.png"
+                    alt="Дитяча музична школа"
+                  />
+                </div>
+                <div class="project__description">
+                  <div class="project__brief">
+                    <p>
+                      <strong>Завдання:</strong>
+                      оформити профіль в Instagram.
+                    </p>
+                    <p>
+                      <strong>Результат:</strong>
+                      створені шапка, аватарка, хайлайти, референси постів.
+                    </p>
+                  </div>
+                </div>
               </div>
+              <span class="project__title"> Дитяча музична школа </span>
             </div>
-          </div>
-          <span class="project__title">
-            Дитяча музична школа
-          </span>
-        </div>
 
-        <div class="project">
-          <div class="project__board">
-            <div class="project__visual">
-              <img class="project__image" src="assets/images/projects/visuals/shop.png"
-                alt="Магазин домашніх товарів" />
-              <img class="project__image" src="assets/images/projects/visuals/shop-feed.png"
-                alt="Магазин домашніх товарів" />
-            </div>
-            <div class="project__description">
-              <div class="project__brief">
-                <p>
-                  <strong>Завдання:</strong>
-                  оформити профіль в Instagram.
-                </p>
-                <p>
-                  <strong>Результат:</strong>
-                  створені шапка,
-                  аватарка, хайлайти,
-                  референси постів.
-                </p>
+            <div class="project">
+              <div class="project__board">
+                <div class="project__visual">
+                  <img
+                    class="project__image"
+                    src="assets/images/projects/visuals/shop.png"
+                    alt="Магазин домашніх товарів"
+                  />
+                  <img
+                    class="project__image"
+                    src="assets/images/projects/visuals/shop-feed.png"
+                    alt="Магазин домашніх товарів"
+                  />
+                </div>
+                <div class="project__description">
+                  <div class="project__brief">
+                    <p>
+                      <strong>Завдання:</strong>
+                      оформити профіль в Instagram.
+                    </p>
+                    <p>
+                      <strong>Результат:</strong>
+                      створені шапка, аватарка, хайлайти, референси постів.
+                    </p>
+                  </div>
+                </div>
               </div>
+              <span class="project__title"> Магазин домашніх товарів </span>
             </div>
           </div>
-          <span class="project__title">
-            Магазин домашніх товарів
-          </span>
+
+          <div class="projects-slider__pagination"></div>
+
+          <!-- If we need navigation buttons -->
+          <div class="projects-slider__arrow projects-slider__arrow--left">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+          <div class="projects-slider__arrow projects-slider__arrow--right">
+            <i class="fas fa-chevron-right"></i>
+          </div>
         </div>
 
         <div class="projects__row">
           <div class="project project--minimized">
             <div class="project__board">
               <div class="project__visual">
-                <img class="project__image" src="assets/images/projects/visuals/nails-service.jpeg"
-                  alt="Майстер нігтьового сервісу" />
+                <img
+                  class="project__image"
+                  src="assets/images/projects/visuals/nails-service.jpeg"
+                  alt="Майстер нігтьового сервісу"
+                />
               </div>
             </div>
-            <span class="project__title">
-              Майстер нігтьового сервісу
-            </span>
+            <span class="project__title"> Майстер нігтьового сервісу </span>
           </div>
           <div class="project project--minimized">
             <div class="project__board">
               <div class="project__visual">
-                <img class="project__image" src="assets/images/projects/visuals/jewellery-service.png"
-                  alt="Магазин ювелірних виробів" />
+                <img
+                  class="project__image"
+                  src="assets/images/projects/visuals/jewellery-service.png"
+                  alt="Магазин ювелірних виробів"
+                />
               </div>
             </div>
-            <span class="project__title">
-              Магазин ювелірних виробів
-            </span>
+            <span class="project__title"> Магазин ювелірних виробів </span>
           </div>
         </div>
+
+        <div class="posts">
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+          <div class="post">
+            <img src="" alt="" />
+          </div>
+        </div>
+
         <div class="ad-mockups">
           <div class="ad-mockups__row">
             <div class="ad-mockup">
-              <img src="assets/images/projects/ads/ad-1.jpg" alt="Блог психологині" class="ad-mockup__image">
+              <img
+                src="assets/images/projects/ads/ad-1.jpg"
+                alt="Блог психологині"
+                class="ad-mockup__image"
+              />
             </div>
             <div class="ad-mockup">
-              <img src="assets/images/projects/ads/ad-2.png" alt="Розпродаж спортмагазину" class="ad-mockup__image">
+              <img
+                src="assets/images/projects/ads/ad-2.png"
+                alt="Розпродаж спортмагазину"
+                class="ad-mockup__image"
+              />
             </div>
             <div class="ad-mockup">
-              <img src="assets/images/projects/ads/ad-3.jpg" alt="Майстер педикюру" class="ad-mockup__image">
+              <img
+                src="assets/images/projects/ads/ad-3.jpg"
+                alt="Майстер педикюру"
+                class="ad-mockup__image"
+              />
             </div>
             <div class="ad-mockup">
-              <img src="assets/images/projects/ads/ad-4.jpg" alt="Майстер-кондитер" class="ad-mockup__image">
+              <img
+                src="assets/images/projects/ads/ad-4.jpg"
+                alt="Майстер-кондитер"
+                class="ad-mockup__image"
+              />
             </div>
           </div>
-          <span class="ad-mockups__title">
-            Приклади рекламних макетів
-          </span>
+          <span class="ad-mockups__title"> Приклади рекламних макетів </span>
           <div class="ad-mockups__row">
             <div class="ad-mockup">
-              <img src="assets/images/projects/ads/ad-5.jpg" alt="Пархомівський музей" class="ad-mockup__image">
+              <img
+                src="assets/images/projects/ads/ad-5.jpg"
+                alt="Пархомівський музей"
+                class="ad-mockup__image"
+              />
             </div>
             <div class="ad-mockup">
-              <img src="assets/images/projects/ads/ad-6.jpg" alt="Пархомівський музей" class="ad-mockup__image">
+              <img
+                src="assets/images/projects/ads/ad-6.jpg"
+                alt="Пархомівський музей"
+                class="ad-mockup__image"
+              />
             </div>
             <div class="ad-mockup">
-              <img src="assets/images/projects/ads/ad-7.jpg" alt="Пархомівський музей" class="ad-mockup__image">
+              <img
+                src="assets/images/projects/ads/ad-7.jpg"
+                alt="Пархомівський музей"
+                class="ad-mockup__image"
+              />
             </div>
             <div class="ad-mockup">
-              <img src="assets/images/projects/ads/ad-8.jpg" alt="Майстер-кондитер" class="ad-mockup__image">
+              <img
+                src="assets/images/projects/ads/ad-8.jpg"
+                alt="Майстер-кондитер"
+                class="ad-mockup__image"
+              />
             </div>
           </div>
         </div>
@@ -399,7 +482,10 @@
           <div class="project__board">
             <div class="project__visual project__visual--centered">
               <video class="project__video" controls muted>
-                <source src="assets/videos/clothes-shop.mp4#t=1" type="video/mp4">
+                <source
+                  src="assets/videos/clothes-shop.mp4#t=1"
+                  type="video/mp4"
+                />
               </video>
             </div>
             <div class="project__description">
@@ -410,28 +496,29 @@
                 </p>
                 <p>
                   <strong>Результат:</strong>
-                  готове відео тривалістю 15 сек
-                  з використанням основних фрагментів матеріалу
+                  готове відео тривалістю 15 сек з використанням основних
+                  фрагментів матеріалу
                 </p>
               </div>
             </div>
           </div>
           <span class="project__title">
-            Приклад монтажу відео
-            для рекламного креативу
+            Приклад монтажу відео для рекламного креативу
           </span>
         </div>
 
         <div class="video-mockups">
           <div class="video-mockup">
             <video class="video-mockup__video" controls muted>
-              <source src="assets/videos/working-proccess.mp4" type="video/mp4">
+              <source
+                src="assets/videos/working-proccess.mp4"
+                type="video/mp4"
+              />
             </video>
             <span class="video-mockup__title">
-              Приклад створення різних гілок
-              (зміна варіантів аудиторій, інтересів, макетів)
-              таргетованої реклами для тестів і
-              знаходження найкращого варіанту
+              Приклад створення різних гілок (зміна варіантів аудиторій,
+              інтересів, макетів) таргетованої реклами для тестів і знаходження
+              найкращого варіанту
             </span>
           </div>
         </div>
@@ -440,17 +527,11 @@
 
     <section class="section contacts-section" id="contacts">
       <div class="container contacts-section__container">
-        <h2 class="section__title">
-          Контакти
-        </h2>
+        <h2 class="section__title">Контакти</h2>
 
         <div class="contacts-section__description">
-          <p>
-            Хочете дізнатися більше чи просто побалакати?
-          </p>
-          <p>
-            Будь ласка!
-          </p>
+          <p>Хочете дізнатися більше чи просто побалакати?</p>
+          <p>Будь ласка!</p>
         </div>
 
         <a class="contacts-button" href="mailto:hoshko.anastasia@gmail.com">
@@ -459,12 +540,18 @@
 
         <ul class="contacts-links">
           <li class="contacts-link contacts-link--tiktok">
-            <a href="https://vm.tiktok.com/ZMRJ6mF4d/" class="contacts-link__link">
+            <a
+              href="https://vm.tiktok.com/ZMRJ6mF4d/"
+              class="contacts-link__link"
+            >
               <i class="fab fa-tiktok contacts-link__icon"></i>
             </a>
           </li>
           <li class="contacts-link contacts-link--instagram">
-            <a href="https://www.instagram.com/hoshechka/" class="contacts-link__link">
+            <a
+              href="https://www.instagram.com/hoshechka/"
+              class="contacts-link__link"
+            >
               <i class="fab fa-instagram contacts-link__icon"></i>
             </a>
           </li>
@@ -474,7 +561,10 @@
             </a>
           </li>
           <li class="contacts-link contacts-link--facebook">
-            <a href="https://www.facebook.com/hoshechka/" class="contacts-link__link">
+            <a
+              href="https://www.facebook.com/hoshechka/"
+              class="contacts-link__link"
+            >
               <i class="fab fa-facebook-f contacts-link__icon"></i>
             </a>
           </li>
@@ -484,5 +574,4 @@
 
     <script src="scripts/index.mjs" type="module"></script>
   </body>
-
 </html>
