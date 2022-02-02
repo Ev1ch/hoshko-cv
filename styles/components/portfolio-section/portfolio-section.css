@@ -1,9 +1,8 @@
 @import url('./projects.css');
-@import url('./project.css');
-@import url('./projects-slider.css');
 @import url('./posts.css');
 @import url('./ad-mockups.css');
 @import url('./video-mockups.css');
+@import url('./tiktoks.css');
 
 .portfolio-section {
   background: var(--light);

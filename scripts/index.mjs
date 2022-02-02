@@ -5,6 +5,14 @@ import {
   PROJECTS_SLIDER_ROOT,
   PROJECTS_SLIDER_OPTIONS,
 } from './constants/projects-slider-options.mjs';
+import {
+  POSTS_SLIDER_ROOT,
+  POSTS_SLIDER_OPTIONS,
+} from './constants/posts-slider-options.mjs';
+import {
+  TIKTOKS_SLIDER_ROOT,
+  TIKTOKS_SLIDER_OPTIONS,
+} from './constants/tiktoks-slider-options.mjs';
 
 window.addEventListener('load', () => {
   hideLoader();
@@ -14,4 +22,6 @@ window.addEventListener('load', () => {
     PROJECTS_SLIDER_ROOT,
     PROJECTS_SLIDER_OPTIONS,
   );
+  const postsSlider = new Swiper(POSTS_SLIDER_ROOT, POSTS_SLIDER_OPTIONS);
+  const tiktoksSlider = new Swiper(TIKTOKS_SLIDER_ROOT, TIKTOKS_SLIDER_OPTIONS);
 });

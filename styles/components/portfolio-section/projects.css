@@ -1,3 +1,10 @@
+@import url('./project.css');
+
+.projects {
+  width: 1300px;
+  position: relative;
+}
+
 .projects__row {
   margin: 0 auto;
   display: -webkit-box;
@@ -5,9 +12,59 @@
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 915px;
+  min-width: 915px;
 }
 
 .projects__row:not(:last-of-type) {
   margin-bottom: 96px;
+}
+
+.projects__arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.projects__arrow--left {
+  left: 0;
+}
+
+.projects__arrow--right {
+  right: 0;
+}
+
+.projects__arrow--disabled {
+  cursor: initial;
+  opacity: 0.5;
+}
+
+.projects__arrow i {
+  color: var(--medium);
+  font-size: 56px;
+}
+
+.projects__pagination {
+  z-index: 1;
+  position: absolute;
+  margin-bottom: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.projects__bullet {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: var(--medium);
+  opacity: 0.5;
+}
+
+.projects__bullet--active {
+  opacity: 1;
 }
