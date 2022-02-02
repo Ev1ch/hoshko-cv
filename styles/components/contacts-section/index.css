@@ -1,0 +1,22 @@
+@import url('./contacts-button.css');
+@import url('./contacts-links.css');
+
+.contacts-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 795px;
+  background: var(--light);
+}
+
+.contacts-section__container {
+  margin: auto;
+}
+
+.contacts-section__description p {
+  margin: 0;
+}
+
+.contacts-section__description p:not(:last-of-type) {
+  margin-bottom: 20px;
+}

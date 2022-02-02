@@ -1,3 +1,3 @@
-@import url('./commons/common.css');
-@import url('./components/components.css');
+@import url('./commons/index.css');
+@import url('./components/index.css');
 @import url('./responsible.css');
