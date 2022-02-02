@@ -86,6 +86,16 @@
   border-radius: 10px;
 }
 
+.tiktok__statistic {
+  max-width: 100%;
+  background: #fff;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 100%;
+  max-height: 600px;
+  border-radius: 10px;
+}
+
 .tiktok__visual,
 .tiktok__description {
   width: 50%;
