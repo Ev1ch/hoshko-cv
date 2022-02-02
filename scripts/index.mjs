@@ -1,18 +1,14 @@
 import { hideLoader } from './components/preloader.mjs';
 import Navigation from './components/navigation.mjs';
-import NAVIGATION_OPTIONS from './constants/navigation-options.mjs';
 import {
+  NAVIGATION_OPTIONS,
   PROJECTS_SLIDER_ROOT,
   PROJECTS_SLIDER_OPTIONS,
-} from './constants/projects-slider-options.mjs';
-import {
   POSTS_SLIDER_ROOT,
   POSTS_SLIDER_OPTIONS,
-} from './constants/posts-slider-options.mjs';
-import {
   TIKTOKS_SLIDER_ROOT,
   TIKTOKS_SLIDER_OPTIONS,
-} from './constants/tiktoks-slider-options.mjs';
+} from './options/index.mjs';
 
 window.addEventListener('load', () => {
   hideLoader();
