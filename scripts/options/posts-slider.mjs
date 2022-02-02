@@ -8,6 +8,7 @@ export const POSTS_SLIDER_OPTIONS = {
   slideClass: 'slide',
   spaceBetween: 80,
   slidesPerView: 3,
+  slidesPerGroup: 3,
   navigation: {
     disabledClass: 'posts__arrow--disabled',
     nextEl: '.posts__arrow--right',

@@ -1,3 +1,7 @@
 .post {
   margin-bottom: 30px;
 }
+
+.post img {
+  width: 100%;
+}
